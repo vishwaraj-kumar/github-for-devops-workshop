@@ -103,7 +103,22 @@ git config user.email
 
 ---
 
-## 📜 8. Clean Terminal & View Command History
+## 🔙🕒 8. View History and Restore Old Version
+- Check commit history:
+
+`git log --oneline`
+
+- To restore file from old commit:
+
+`git checkout <commit-id> -- file.txt`
+
+- save old version as a new file:
+
+`git show <commit-id>:file.txt > old-version.txt`
+
+---
+
+## 📜 9. Clean Terminal & View Command History
 - Clears the terminal screen.
 
   `clear`
@@ -114,7 +129,7 @@ git config user.email
 
 ---
 
-## 🌿 9. Rename Branch from ‘master’ to ‘main’
+## 🌿 10. Rename Branch from ‘master’ to ‘main’
 - Renames the default branch to main.
 
   `git branch -M main`
@@ -123,14 +138,14 @@ git config user.email
 
 # 🚀 Push Project to GitHub
 
-## 🔗 10. Connect Remote Repository
+## 🔗 11. Connect Remote Repository
 - Links your local repo to a GitHub remote repository.
 
   `git remote add origin <repository-https-url>`
 
 ---
 
-## 🔑 11. Use Personal Access Token (PAT) Instead of Password
+## 🔑 12. Use Personal Access Token (PAT) Instead of Password
 
 **💡 Steps to Generate PAT:**
 - Go to GitHub → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
@@ -144,14 +159,14 @@ git config user.email
 
 ---
 
-## 🔍 12. Check Connected Remote
+## 🔍 13. Check Connected Remote
 - Displays the remote repository URLs connected to your local repo.
 
   `git remote -v`
 
 ---
 
-## 🛰️ 13. Push Your Code
+## 🛰️ 14. Push Your Code
 - Pushes your committed code to the main branch of GitHub.
 
   `git push -u origin main`
