@@ -1,1 +1,0 @@
-print("Hello dosto, kya haal ha sab")
