@@ -166,7 +166,7 @@ git config user.email
 
 ---
 
-## 🛰️ 14. Push Your Code
+## 🛰️ 14. Push Your Code from Local to Remote Repo
 - Pushes your committed code to the main branch of GitHub.
 
   `git push -u origin main`
@@ -177,3 +177,10 @@ After this, you can simply use `git push` or `git pull` without specifying the b
 - Pushes code to any specified branch (e.g., master, dev, etc.).
 
   `git push origin <branch_name>`
+
+  ---
+
+  ## 🔄 15. Pull Your Code from Remote Repo to Your Local Repo
+  - Fetches the latest changes from the master branch of the remote repo and merges them into your local branch.
+
+  `git pull origin <your-branch-name>
