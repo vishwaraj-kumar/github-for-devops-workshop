@@ -106,15 +106,15 @@ git config user.email
 ## 🔙🕒 8. View History and Restore Old Version
 - Check commit history:
 
-`git log --oneline`
+  `git log --oneline`
 
 - To restore file from old commit:
 
-`git checkout <commit-id> -- <file_name>`
+  `git checkout <commit-id> -- <file_name>`
 
 - save old version as a new file:
 
-`git show <commit-id>:<file_name> > old-version-file-new_name`
+  `git show <commit-id>:<file_name> > old-version-file-new_name`
 
 ---
 
