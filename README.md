@@ -110,11 +110,11 @@ git config user.email
 
 - To restore file from old commit:
 
-`git checkout <commit-id> -- file.txt`
+`git checkout <commit-id> -- <file_name>`
 
 - save old version as a new file:
 
-`git show <commit-id>:file.txt > old-version.txt`
+`git show <commit-id>:<file_name> > old-version-file-new_name`
 
 ---
 
