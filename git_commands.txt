@@ -1,0 +1,13 @@
+5 basics git commands
+- git init (use this to make empty git repo)
+- git status (show file status)
+- git add <file_name>  (use this command to untracked file to staged file)
+- git restore --staged <file_name>    (use this commands to staged file to return unstaged status)
+- git rm --cached <file_name>    (use this command to staged file to unstaged status)
+
+- git add .  (use this command to add all bulk files untracked to staged status)
+- git commit -m "your message"    (this command use to staged file to tracked file)
+- rm <file_name>   (use this to removes files)
+- git restore <file_name>    (use this to restore a removed/ deleted files)
+- clear (use this to clean terminal code)
+- history (show all command run history)
