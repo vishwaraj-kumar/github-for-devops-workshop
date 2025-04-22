@@ -11,81 +11,126 @@ This is a quick reference guide for using Git in your local system. These basic 
 
 ---
 
-## 🔍 2. Check File Status
+## 🛠️ 2. Git Configuration
+- Set global Git username/email for all repositories.
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"`
+```
+
+- Set username/email only for the current local repository.
+```bash
+git config user.name "Your Name"
+git config user.email "your@email.com"`
+```
+
+- Remove global Git username/email.
+```bash
+git config --global --unset user.name
+git config --global --unset user.email
+```
+
+- Remove local Git username/email.
+```bash
+git config --local --unset user.name
+git config --local --unset user.email
+```
+
+- Show all Git configuration settings (global + local).
+
+  `git config --list`
+
+- Show only global Git configuration settings.
+
+  `git config --global --list`
+
+- Show only local Git configuration for the current repo.
+
+  `git config --local --list`
+
+- Check current username/email (global or local depending on scope).
+```bash
+git config user.name
+git config user.email
+```
+
+---
+
+## 🔍 3. Check File Status
 - Shows the current status of files — untracked, staged, or modified.
 
   `git status`
 
 ---
 
-## ➕ 3. Add Files to Staging Area
+## ➕ 4. Add Files to Staging Area
 - Moves a specific untracked file to the staging area.
 
-`git add <file_name>`
+  `git add <file_name>`
 
 - Adds all untracked or modified files to the staging area in bulk.
 
-`git add .`
+  `git add .`
 
 ---
 
-## 🔁 4. Unstage a Staged File
+## 🔁 5. Unstage a Staged File
 - Removes the file from the staging area and moves it back to unstaged.
 
-`git restore --staged <file_name>`
+  `git restore --staged <file_name>`
 
 - Also removes the file from staging but retains it in the working directory.
 
-`git rm --cached <file_name>`
+  `git rm --cached <file_name>`
 
 ---
 
-## ✅ 5. Commit Staged Files
+## ✅ 6. Commit Staged Files
 - Commits all staged files with a commit message and moves them to tracked state.
 
-`git commit -m "your message"`
+  `git commit -m "your message"`
 
 ---
 
-## 🧹 6. Remove or Restore Files
+## 🧹 7. Remove or Restore Files
 - Deletes a file from your working directory.
 
-`rm <file_name>`
+  `rm <file_name>`
 
 - Restores a deleted or modified file from the last committed version.
 
-`git restore <file_name>`
+  `git restore <file_name>`
 
 ---
 
-## 📜 7. Clean Terminal & View Command History
+## 📜 8. Clean Terminal & View Command History
 - Clears the terminal screen.
 
-`clear`
+  `clear`
 
 - Displays a list of all previously used commands.
 
-`history`
+  `history`
 
 ---
 
-## 🌿 8. Rename Branch from ‘master’ to ‘main’
+## 🌿 9. Rename Branch from ‘master’ to ‘main’
 - Renames the default branch to main.
 
-`git branch -M main`
+  `git branch -M main`
 
 ---
 
 # 🚀 Push Project to GitHub
 
-## 🔗 9. Connect Remote Repository
+## 🔗 10. Connect Remote Repository
 - Links your local repo to a GitHub remote repository.
 
-`git remote add origin <repository-https-url>`
+  `git remote add origin <repository-https-url>`
 
 ---
 
-## 🔑 10. Use Personal Access Token (PAT) Instead of Password
+## 🔑 11. Use Personal Access Token (PAT) Instead of Password
 
 **💡 Steps to Generate PAT:**
 - Go to GitHub → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
@@ -95,25 +140,25 @@ This is a quick reference guide for using Git in your local system. These basic 
 
 **🔄 Update Remote URL Using Token:**
 
-`git remote set-url origin https://<your-token>@<your-repo-url-without-https>`
+  `git remote set-url origin https://<your-token>@<your-repo-url-without-https>`
 
 ---
 
-## 🔍 11. Check Connected Remote
+## 🔍 12. Check Connected Remote
 - Displays the remote repository URLs connected to your local repo.
 
-`git remote -v`
+  `git remote -v`
 
 ---
 
-## 🛰️ 12. Push Your Code
+## 🛰️ 13. Push Your Code
 - Pushes your committed code to the main branch of GitHub.
 
-`git push -u origin main`
+  `git push -u origin main`
 
 The -u flag sets the upstream (tracking) relationship between your local branch and the remote branch.
 After this, you can simply use `git push` or `git pull` without specifying the branch name.
 
 - Pushes code to any specified branch (e.g., master, dev, etc.).
 
-`git push origin <branch_name>`
+  `git push origin <branch_name>`
