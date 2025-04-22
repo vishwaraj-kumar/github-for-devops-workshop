@@ -181,7 +181,7 @@ After this, you can simply use `git push` or `git pull` without specifying the b
   ---
 
 ## 🔄 15. Pull Your Code from Remote Repo to Your Local Repo
-- Fetches the latest changes from the master branch of the remote repo and merges them into your local branch.
+- This command updates your local repository with the latest changes from the remote GitHub repository.
 
   `git pull origin <your-branch-name>`
 
