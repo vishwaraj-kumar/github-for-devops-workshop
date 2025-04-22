@@ -1,13 +1,23 @@
-5 basics git commands
-- git init (use this to make empty git repo)
-- git status (show file status)
-- git add <file_name>  (use this command to untracked file to staged file)
-- git restore --staged <file_name>    (use this commands to staged file to return unstaged status)
-- git rm --cached <file_name>    (use this command to staged file to unstaged status)
+git commands
 
-- git add .  (use this command to add all bulk files untracked to staged status)
-- git commit -m "your message"    (this command use to staged file to tracked file)
-- rm <file_name>   (use this to removes files)
-- git restore <file_name>    (use this to restore a removed/ deleted files)
-- clear (use this to clean terminal code)
-- history (show all command run history)
+- git init
+- git status
+- git add <file_name>
+- git restore --staged <file_name>
+- git rm --cached <file_name>
+
+- git add .
+- git commit -m "your message"
+- rm <file_name>
+- git restore <file_name>
+- clear
+- history
+- git branch -M main
+- git remote add origin <Repository https url>
+
+- but before push you need github user password but i use PAT(personal access token) to add remote origin without user password.
+- process:- to generate PAT (personal access token) Go to github profile settings--> Scroll down--> Developer Settings--> Personal Access Token--> Tokens (classic)--> Generate new token--> Generate new token classic--> write tokken name--> Set expiry--> Select scopes (tick Repo)--> Scroll down--> Generate token--> Copy token 
+- git git remote set-url origin https://<Token Paste>@<paste your repo url without https>
+- git remote -v
+- git push -u origin main
+- git push origin master
