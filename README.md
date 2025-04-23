@@ -104,6 +104,18 @@ git config user.email
 ---
 
 ## 🔙🕒 8. View History and Restore Old Version
+- Shows the commit history of the current branch with details like commit ID, author, date, and message.
+
+  `git log`
+
+example:-
+```
+commit af87faf493599641706a8881881f8e78b9672934 (HEAD -> master, origin/master)
+Author: Vishwaraj Kumar <your_email@gmail.com>
+Date:   Tue Apr 22 22:19:24 2025 +0530
+```
+`HEAD` Represents the current branch and latest commit your repo is pointing to.
+
 - Check commit history:
 
   `git log --oneline`
